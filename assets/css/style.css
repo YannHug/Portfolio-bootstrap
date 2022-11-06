@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.navbar {
+    border-bottom: 1px solid black;
+}
+
+.imgProfileAcc {
+    width: 150px;
+}
+
+#accueil {
+    min-height: 750px;
+}
+
+.imgCompetences {
+    height: 120px;
+    width: 120px;
+}
+
+.titreContact {
+    padding: 40px 0 50px 0;
+    margin-top: 100px;
+}
