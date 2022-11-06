@@ -7,3 +7,7 @@ body {
 .imgProfileAcc {
     width: 150px;
 }
+
+#accueil {
+    min-height: 750px;
+}
