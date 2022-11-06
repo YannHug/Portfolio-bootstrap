@@ -255,7 +255,7 @@
         </div>
 
         <div class="text-center mt-4">
-            <a class="btn btn-xl btn-outline-light" href="#contact">Contactez moi</a>
+            <a class="btn btn-xl btn-outline-light" href="#contact-form">Contactez moi</a>
         </div>
     </div>
 </section>
@@ -290,6 +290,62 @@
         </div>
     </div>
 </div>
+
+<!-- Contact -->
+<section class="bg-dark text-white pt-5 mb-0" id="contact">
+    <div class="container">
+        <h2 class="titreContact text-center">Rentrons en Contact !</h2>
+        <div class="row">
+            <div class="col-10 mx-auto">
+                <form id="contact-form" role="form">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="form-group">
+                                <label for="form_prenom">Prénom *</label>
+                                <input class="form-control" id="form_prenom" name="prenom" required="required"
+                                       type="text">
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="form-group">
+                                <label for="form_nom">Nom *</label>
+                                <input class="form-control" id="form_nom" name="nom" required="required" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="form-group">
+                                <label for="form_email">Email *</label>
+                                <input class="form-control" id="form_email" name="email" required="required"
+                                       type="email">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                                <label for="form_message">Message *</label>
+                                <textarea class="form-control" id="form_message" name="message" required="required"
+                                          rows="4"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12 mb-5">
+                            <input class="btn btn-success btn-send" type="submit" value="Envoyer">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white">
+    <p class="text-center m-0">
+        @Tout droit réservés - Yannick HUGUES
+    </p>
+</footer>
 
 <script src="app.js"></script>
 <script crossorigin="anonymous"
