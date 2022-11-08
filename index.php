@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -12,7 +13,7 @@
 <body>
 
 <!--  Barre de navigation  -->
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <button aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
             data-bs-target="#navbarToggler" data-bs-toggle="collapse" type="button">
         <span class="navbar-toggler-icon"></span>
@@ -38,9 +39,28 @@
     </div>
 </nav>
 
+
 <!-- Accueil -->
 <section class="text-white bg-dark text-center d-flex flex-column align-items-center w-100 h-75 p-3 mx-auto"
          id="accueil">
+
+    <!-- Message success -->
+    <?php
+    if (isset($_SESSION['message'])) {
+        ?>
+        <div class="alert alert-dismissible alert-success mt-5">
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            <strong>
+                <?php
+                echo $_SESSION['message'];
+                ?>
+            </strong>
+        </div>
+        <?php
+        unset($_SESSION['message']);
+    }
+    ?>
+
     <div class="mt-auto">
         <img alt="profile picture" class="imgProfileAcc img-thumbnail rounded mb-3" src="assets/images/profil.png">
         <h1>Salut, moi c'est Yannick</h1>
@@ -53,6 +73,7 @@
         <p>Lorem ipsum dolor sit amet.</p>
     </div>
 </section>
+
 
 <!-- Portfolio -->
 <section class="py-5" id="portfolio">
@@ -296,7 +317,7 @@
         <h2 class="titreContact text-center">Rentrons en Contact !</h2>
         <div class="row">
             <div class="col-10 mx-auto">
-                <form id="contact-form" role="form">
+                <form id="contact-form" role="form" method="post" action="assets/php/mail.php">
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <div class="form-group">
