@@ -24,13 +24,13 @@
                 <a class="nav-link text-dark" href="#accueil">Accueil</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-dark" href="#portfolio">Portfolio</a>
+                <a class="nav-link text-dark" href="#competences">Compétences</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link text-dark" href="#about">À propos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-dark" href="#competences">Compétences</a>
+                <a class="nav-link text-dark" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link text-dark" href="#contact">Contact</a>
@@ -70,14 +70,85 @@
         </p>
     </div>
     <div class="mt-auto">
-        <p>Lorem ipsum dolor sit amet.</p>
+        <blockquote>
+            <p class="lead">À cœur vaillant, rien d’impossible.</p>
+            <cite>Jacques Coeur</cite>
+        </blockquote>
     </div>
 </section>
 
+<!-- Competences -->
+<section class="mb-0" id="competences">
+    <div class="container py-3">
+        <h2 class="text-center text-uppercase my-5">Mes compétences</h2>
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-center align-items-center">
+                <img alt="logo HTML CSS" class="imgCompetences" src="assets/images/html-css.png">
+                <h2 class="text-center">WEB</h2>
+                <ul>
+                    <li>Sémantique</li>
+                    <li>Bootstrap</li>
+                    <li>Qualité Web (OPQUAST)</li>
+                    <li>JavaScript → DOM / Événements</li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-center align-items-center">
+                <img alt="Logo PHP" class="imgCompetences" src="assets/images/php.png">
+                <h2 class="text-center">PHP</h2>
+                <ul>
+                    <li>POO</li>
+                    <li>BDD (MySQL)</li>
+                    <li>MVC</li>
+                    <li>CRUD</li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-center align-items-center">
+                <img alt="Logo Symfonie" class="imgCompetences" src="assets/images/symfony.png">
+                <h2 class="text-center">SYMFONY</h2>
+                <ul>
+                    <li>Doctrine</li>
+                    <li>Formulaire</li>
+                    <li>API</li>
+                    <li>ADMIN</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- A propos -->
+<section class="bg-dark text-white mb-0" id="about">
+    <div class="container py-5">
+        <h2 class="text-center text-uppercase text-white pb-3">À Propos</h2>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-5">
+                <p class="lead">
+                    Après plusieurs années au sein de l'armée, une page se tourne.🪖 <br>
+                    Passionné depuis toujours par le domaine informatique, j'entreprends une reconversion en
+                    développement web (PHP/Symfony) en 2021 avec passage du titre pro de Développeur web et web mobile
+                    (niveau 5)💻
+                </p>
+            </div>
+            <div class="col-lg-5">
+                <p class="lead">
+                    Je suis, aujourd'hui, à la recherche d'une alternance, secteur Brest, pour passer un Titre Pro de
+                    Niveau 6, Bac+4, de Concepteur Développeur d'Applications au sein de l'ENI.<br>
+                    Rythme 1 à 2 semaines de cours, pour 4 à 8 semaines en entreprises. 🎒👩‍🎓
+                </p>
+                <a href="https://cvdesignr.com/p/63243be1250e6?hl=fr_FR" target="_blank">Mon CV</a>
+            </div>
+        </div>
+
+        <div class="text-center mt-4">
+            <a class="btn btn-xl btn-outline-light" href="#contact-form">Contactez moi</a>
+        </div>
+    </div>
+</section>
 
 <!-- Portfolio -->
 <section class="py-5" id="portfolio">
-    <h2 class="text-center mb-5 text-uppercase">Portfolio</h2>
+    <h2 class="text-center mb-5 text-uppercase">Portfolio (en cours de création)</h2>
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-6 col-12">
@@ -251,62 +322,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-
-<!-- A propos -->
-<section class="bg-dark text-white mb-0" id="about">
-    <div class="container py-5">
-        <h2 class="text-center text-uppercase text-white pb-3">À Propos</h2>
-
-        <div class="row d-flex justify-content-center">
-            <div class="col-lg-4">
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, nostrum porro? Asperiores
-                    cupiditate facilis inventore magni quod. Eos molestiae, natus. Blanditiis exercitationem, fugiat,
-                    inventore maxime necessitatibus odit perspiciatis quo rem, repellendus reprehenderit rerum sunt
-                    totam?</p>
-            </div>
-            <div class="col-lg-4">
-                <p class="lead">Adipisci deleniti deserunt dolor doloremque doloribus eligendi error esse, est eum ex
-                    facilis illo iste iure laboriosam libero magnam magni molestias nemo nulla optio porro provident
-                    quam qui quisquam quos sequi soluta suscipit totam velit?</p>
-            </div>
-        </div>
-
-        <div class="text-center mt-4">
-            <a class="btn btn-xl btn-outline-light" href="#contact-form">Contactez moi</a>
-        </div>
-    </div>
-</section>
-
-<!-- Competences -->
-<section class="container" id="competences">
-    <h2 class="text-center text-uppercase my-5">Mes compétences</h2>
-    <div class="row d-flex justify-content-center">
-        <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-center align-items-center">
-            <img alt="image de la technologie" class="imgCompetences" src="https://picsum.photos/200">
-            <h2 class="text-center">Lorem.</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda doloribus expedita praesentium
-                repellendus repudiandae! Asperiores cum iusto tempora. Dicta ducimus expedita magni modi placeat! A
-                aspernatur assumenda mollitia perferendis perspiciatis sapiente tempore unde vero voluptatem!</p>
-            <a class="btn btn-secondary mb-5" href="#">Voir mes projets &raquo;</a>
-        </div>
-        <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-center align-items-center">
-            <img alt="image de la technologie" class="imgCompetences" src="https://picsum.photos/200">
-            <h2 class="text-center">Lorem.</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda doloribus expedita praesentium
-                repellendus repudiandae! Asperiores cum iusto tempora. Dicta ducimus expedita magni modi placeat! A
-                aspernatur assumenda mollitia perferendis perspiciatis sapiente tempore unde vero voluptatem!</p>
-            <a class="btn btn-secondary mb-5" href="#">Voir mes projets &raquo;</a>
-        </div>
-        <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-center align-items-center">
-            <img alt="image de la technologie" class="imgCompetences" src="https://picsum.photos/200">
-            <h2 class="text-center">Lorem.</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda doloribus expedita praesentium
-                repellendus repudiandae! Asperiores cum iusto tempora. Dicta ducimus expedita magni modi placeat! A
-                aspernatur assumenda mollitia perferendis perspiciatis sapiente tempore unde vero voluptatem!</p>
-            <a class="btn btn-secondary mb-5" href="#">Voir mes projets &raquo;</a>
         </div>
     </div>
 </section>
@@ -362,8 +377,8 @@
 
 <!-- Footer -->
 <footer class="bg-dark text-white">
-    <p class="text-center m-0">
-        @Tout droit réservés - Yannick HUGUES
+    <p class="text-center m-0 pb-5">
+        ©Tous droits réservés - Yannick HUGUES
     </p>
 </footer>
 
