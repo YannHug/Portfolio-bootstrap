@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -5,14 +6,14 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>Portfolio Yannick HUGUES</title>
     <link href="assets/css/style.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://bootswatch.com/5/cerulean/bootstrap.min.css" rel="stylesheet">
     <link href="assets/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
 
 </head>
 <body>
 
 <!--  Barre de navigation  -->
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <button aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
             data-bs-target="#navbarToggler" data-bs-toggle="collapse" type="button">
         <span class="navbar-toggler-icon"></span>
@@ -38,9 +39,28 @@
     </div>
 </nav>
 
+
 <!-- Accueil -->
-<div class="text-white bg-dark text-center d-flex flex-column align-items-center w-100 h-75 p-3 mx-auto"
-     id="accueil">
+<section class="text-white bg-dark text-center d-flex flex-column align-items-center w-100 h-75 p-3 mx-auto"
+         id="accueil">
+
+    <!-- Message success -->
+    <?php
+    if (isset($_SESSION['message'])) {
+        ?>
+        <div class="alert alert-dismissible alert-success mt-5">
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            <strong>
+                <?php
+                echo $_SESSION['message'];
+                ?>
+            </strong>
+        </div>
+        <?php
+        unset($_SESSION['message']);
+    }
+    ?>
+
     <div class="mt-auto">
         <img alt="profile picture" class="imgProfileAcc img-thumbnail rounded mb-3" src="assets/images/profil.png">
         <h1>Salut, moi c'est Yannick</h1>
@@ -52,12 +72,12 @@
     <div class="mt-auto">
         <p>Lorem ipsum dolor sit amet.</p>
     </div>
-</div>
+</section>
+
 
 <!-- Portfolio -->
-<div class="py-5" id="portfolio">
+<section class="py-5" id="portfolio">
     <h2 class="text-center mb-5 text-uppercase">Portfolio</h2>
-
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-6 col-12">
@@ -70,10 +90,10 @@
                             sunt!</p>
                         <div class="btn-group">
                             <a class="text-dark" href="https://github.com" target="_blank">
-                                <button class="btn btn-sm btn-outline-secondary">Code Source</button>
+                                <button class="btn btn-sm btn-outline-info">Code Source</button>
                             </a>
                             <a class="text-dark ms-2" href="#" target="_blank">
-                                <button class="btn btn-sm btn-outline-secondary">Voir le projet</button>
+                                <button class="btn btn-sm btn-outline-info">Voir le projet</button>
                             </a>
                         </div>
                     </div>
@@ -89,10 +109,10 @@
                             sunt!</p>
                         <div class="btn-group">
                             <a class="text-dark" href="https://github.com" target="_blank">
-                                <button class="btn btn-sm btn-outline-secondary">Code Source</button>
+                                <button class="btn btn-sm btn-outline-info">Code Source</button>
                             </a>
                             <a class="text-dark ms-2" href="#" target="_blank">
-                                <button class="btn btn-sm btn-outline-secondary">Voir le projet</button>
+                                <button class="btn btn-sm btn-outline-info">Voir le projet</button>
                             </a>
                         </div>
                     </div>
@@ -108,10 +128,10 @@
                             sunt!</p>
                         <div class="btn-group">
                             <a class="text-dark" href="https://github.com" target="_blank">
-                                <button class="btn btn-sm btn-outline-secondary">Code Source</button>
+                                <button class="btn btn-sm btn-outline-info">Code Source</button>
                             </a>
                             <a class="text-dark ms-2" href="#" target="_blank">
-                                <button class="btn btn-sm btn-outline-secondary">Voir le projet</button>
+                                <button class="btn btn-sm btn-outline-info">Voir le projet</button>
                             </a>
                         </div>
                     </div>
@@ -127,10 +147,10 @@
                             sunt!</p>
                         <div class="btn-group">
                             <a class="text-dark" href="https://github.com" target="_blank">
-                                <button class="btn btn-sm btn-outline-secondary">Code Source</button>
+                                <button class="btn btn-sm btn-outline-info">Code Source</button>
                             </a>
                             <a class="text-dark ms-2" href="#" target="_blank">
-                                <button class="btn btn-sm btn-outline-secondary">Voir le projet</button>
+                                <button class="btn btn-sm btn-outline-info">Voir le projet</button>
                             </a>
                         </div>
                     </div>
@@ -146,10 +166,10 @@
                             sunt!</p>
                         <div class="btn-group">
                             <a class="text-dark" href="https://github.com" target="_blank">
-                                <button class="btn btn-sm btn-outline-secondary">Code Source</button>
+                                <button class="btn btn-sm btn-outline-info">Code Source</button>
                             </a>
                             <a class="text-dark ms-2" href="#" target="_blank">
-                                <button class="btn btn-sm btn-outline-secondary">Voir le projet</button>
+                                <button class="btn btn-sm btn-outline-info">Voir le projet</button>
                             </a>
                         </div>
                     </div>
@@ -165,10 +185,10 @@
                             sunt!</p>
                         <div class="btn-group">
                             <a class="text-dark" href="https://github.com" target="_blank">
-                                <button class="btn btn-sm btn-outline-secondary">Code Source</button>
+                                <button class="btn btn-sm btn-outline-info">Code Source</button>
                             </a>
                             <a class="text-dark ms-2" href="#" target="_blank">
-                                <button class="btn btn-sm btn-outline-secondary">Voir le projet</button>
+                                <button class="btn btn-sm btn-outline-info">Voir le projet</button>
                             </a>
                         </div>
                     </div>
@@ -184,10 +204,10 @@
                             sunt!</p>
                         <div class="btn-group">
                             <a class="text-dark" href="https://github.com" target="_blank">
-                                <button class="btn btn-sm btn-outline-secondary">Code Source</button>
+                                <button class="btn btn-sm btn-outline-info">Code Source</button>
                             </a>
                             <a class="text-dark ms-2" href="#" target="_blank">
-                                <button class="btn btn-sm btn-outline-secondary">Voir le projet</button>
+                                <button class="btn btn-sm btn-outline-info">Voir le projet</button>
                             </a>
                         </div>
                     </div>
@@ -203,10 +223,10 @@
                             sunt!</p>
                         <div class="btn-group">
                             <a class="text-dark" href="https://github.com" target="_blank">
-                                <button class="btn btn-sm btn-outline-secondary">Code Source</button>
+                                <button class="btn btn-sm btn-outline-info">Code Source</button>
                             </a>
                             <a class="text-dark ms-2" href="#" target="_blank">
-                                <button class="btn btn-sm btn-outline-secondary">Voir le projet</button>
+                                <button class="btn btn-sm btn-outline-info">Voir le projet</button>
                             </a>
                         </div>
                     </div>
@@ -222,10 +242,10 @@
                             sunt!</p>
                         <div class="btn-group">
                             <a class="text-dark" href="https://github.com" target="_blank">
-                                <button class="btn btn-sm btn-outline-secondary">Code Source</button>
+                                <button class="btn btn-sm btn-outline-info">Code Source</button>
                             </a>
                             <a class="text-dark ms-2" href="#" target="_blank">
-                                <button class="btn btn-sm btn-outline-secondary">Voir le projet</button>
+                                <button class="btn btn-sm btn-outline-info">Voir le projet</button>
                             </a>
                         </div>
                     </div>
@@ -233,7 +253,7 @@
             </div>
         </div>
     </div>
-</div>
+</section>
 
 <!-- A propos -->
 <section class="bg-dark text-white mb-0" id="about">
@@ -261,8 +281,8 @@
 </section>
 
 <!-- Competences -->
-<h2 class="text-center my-5 text-uppercase" id="competences">Mes compétences</h2>
-<div class="container">
+<section class="container" id="competences">
+    <h2 class="text-center text-uppercase my-5">Mes compétences</h2>
     <div class="row d-flex justify-content-center">
         <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-center align-items-center">
             <img alt="image de la technologie" class="imgCompetences" src="https://picsum.photos/200">
@@ -289,7 +309,7 @@
             <a class="btn btn-secondary mb-5" href="#">Voir mes projets &raquo;</a>
         </div>
     </div>
-</div>
+</section>
 
 <!-- Contact -->
 <section class="bg-dark text-white mb-0" id="contact">
@@ -297,7 +317,7 @@
         <h2 class="titreContact text-center">Rentrons en Contact !</h2>
         <div class="row">
             <div class="col-10 mx-auto">
-                <form id="contact-form" role="form">
+                <form id="contact-form" role="form" method="post" action="assets/php/mail.php">
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <div class="form-group">
